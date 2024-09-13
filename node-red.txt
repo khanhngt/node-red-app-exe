@@ -1,0 +1,1 @@
+D:\Khanhktsx\Git\node-red-app-v2\dist\run-app-win32-x64\resources\app\node-red-data

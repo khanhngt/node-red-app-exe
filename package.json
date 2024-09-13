@@ -1,0 +1,34 @@
+{
+  "name": "red-app-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pkg": "pkg . --out-path dist --targets win --no-bytecode --public",
+    "build": "npx electron-packager . run-app --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "bin": "main.js",
+  "pkg": {
+    "assets": [
+      "node_modules/",
+      "node-red-data/",
+      "node_modules/.bin/",
+      "node-binary"
+    ],
+    "scripts": [
+      "main.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^4.0.2",
+    "node-red-dashboard": "^3.6.5"
+  },
+  "devDependencies": {
+    "electron": "^32.1.0",
+    "electron-packager": "^17.1.2"
+  }
+}
